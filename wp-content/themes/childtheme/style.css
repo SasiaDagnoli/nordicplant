@@ -1,0 +1,12 @@
+/*
+
+Theme Name: Childtheme
+Template: hypermarket
+Version: 1.0.1
+
+*/
+
+/* Fjern sideoverskrifter */
+.mobile-center {
+    display: none;
+}
