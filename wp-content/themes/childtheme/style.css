@@ -66,3 +66,18 @@ h2 {
     /* Farve på brødteksten i footeren */
     color: white;
 }
+
+#plantecontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3rem;
+
+}
+
+@media (min-width: 1200px) {
+    #plantecontainer {
+        padding-left: 12rem;
+        padding-right: 12rem;
+        padding-top: 4rem;
+    }
+}
