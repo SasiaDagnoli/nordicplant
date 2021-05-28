@@ -2,11 +2,67 @@
 
 Theme Name: Childtheme
 Template: hypermarket
-Version: 1.0.1
+Version: 1.0.2
 
 */
+
+/* GLOBALE STYLES */
 
 /* Fjern sideoverskrifter */
 .mobile-center {
     display: none;
+}
+
+/* Fontfarve */
+h3,
+p,
+h1,
+h2 {
+    color: #463939;
+}
+
+.copyright {
+    display: none;
+}
+
+/* GLOBALE STYLES SLUT */
+
+/* MOBILE */
+
+/* Header */
+
+/* Størrelsen og placering af logo på mobile */
+.site-logo img {
+    width: 50%;
+    margin-left: -8px
+}
+
+/* Footer */
+.footer .column {
+    background: #BB4E06;
+    padding-bottom: 110px;
+}
+
+.main-navigation.open {
+    opacity: 0.9;
+}
+
+/* Farve på burgermenuen*/
+.material-icons {
+    color: #BB4E06;
+}
+
+.toolbar .inner > a.mobile-menu-toggle.menu-text-right {
+    color: #BB4E06;
+}
+
+.widget-title {
+    font-size: 20px;
+    /* Farve på overskrifter i footeren */
+    color: white;
+}
+
+.textwidget p {
+    /* Farve på brødteksten i footeren */
+    color: white;
 }
