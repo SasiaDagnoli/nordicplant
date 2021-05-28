@@ -81,3 +81,10 @@ h2 {
         padding-top: 4rem;
     }
 }
+
+.filter {
+    background-color: white;
+color: #bb4e06;
+border: 1px solid #bb4e06;
+margin: 1vw;
+}
