@@ -21,6 +21,41 @@ h2 {
     color: #463939;
 }
 
+.main-navigation > .menu {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.main-navigation > .menu li > a {
+    font-size: 1.6rem;
+}
+
+.overskriftplanter {
+    font-family: alternate-gothic-extra-cond, sans-serif;
+
+    font-weight: 500;
+
+    font-style: normal;
+    letter-spacing: 5px;
+    font-size: 7rem;
+}
+
+.plantenavn {
+    font-family: alternate-gothic-extra-cond, sans-serif;
+
+    font-weight: 500;
+
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+
+.pris {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -20px;
+}
+
 .copyright {
     display: none;
 }
@@ -69,10 +104,33 @@ h2 {
 
 #plantecontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
 
 }
+
+.billede {
+    cursor: pointer;
+}
+
+.filter {
+    background-color: white;
+    color: #bb4e06;
+    border: 2px solid #bb4e06;
+    margin: 1vw;
+    text-transform: uppercase;
+
+}
+
+.planter {
+    padding: 1rem;
+}
+
+.overskriftplanter {
+    text-align: center;
+}
+
+
 
 @media (min-width: 1200px) {
     #plantecontainer {
@@ -80,11 +138,33 @@ h2 {
         padding-right: 12rem;
         padding-top: 4rem;
     }
-}
 
-.filter {
-    background-color: white;
-color: #bb4e06;
-border: 1px solid #bb4e06;
-margin: 1vw;
+    /* Centrering af knapper */
+    .filterdisplay {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0px 200px;
+    }
+
+    #plantecontainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 3rem;
+    }
+
+    .site-logo img {
+        width: 100%;
+    }
+
+    .filter:hover {
+        color: #a6a6a6;
+        border-color: #a6a6a6;
+    }
+
+    .color {
+        color: #a6a6a6;
+    }
+
+
+
 }

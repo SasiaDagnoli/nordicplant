@@ -17,7 +17,12 @@ get_header();
 
 
 ?>
+<style>
+    @import url("https://use.typekit.net/vcg6uht.css");
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+</style>
+<h1 class="overskriftplanter">Indendørs planter</h1>
 <template>
     <article class="planter">
         <img class="billede" src="" alt="">
@@ -115,6 +120,11 @@ get_header();
     }
 
     getJson();
+
+    //Farve på knap
+
+
+    /*document.querySelector(".filter").addEventListener("click", () => knap.style.color = "#a6a6a6");*/
 
 </script>
 
