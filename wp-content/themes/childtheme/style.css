@@ -209,6 +209,22 @@ h2 {
         grid-gap: 5rem;
     }
 
+    .vand {
+        width: 8%;
+    }
+
+    .vandp {
+        display: flex;
+    }
+
+    .sol {
+        width: 8%;
+    }
+
+    .solp {
+        display: flex;
+    }
+
     /* SINGLE VIEW SLUT */
 
     .color {

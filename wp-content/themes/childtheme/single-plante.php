@@ -21,7 +21,8 @@ get_header();
             <h2 class="plantenavn"></h2>
             <p class="pris"></p>
             <p class="beskrivelse"></p>
-
+            <p class="vandp">Vandmængde<img class="vand" src="" alt=""></p>
+            <p class="solp">Sollys<img class="sol" src="" alt=""></p>
         </div>
     </article>
 
@@ -53,6 +54,8 @@ get_header();
         document.querySelector(".billede").src = plante.billede.guid;
         document.querySelector(".pris").textContent = plante.pris;
         document.querySelector(".beskrivelse").textContent = plante.beskrivelse;
+        document.querySelector(".vand").src = plante.vand.guid;
+        document.querySelector(".sol").src = plante.sol.guid;
     }
 
     getJson();
