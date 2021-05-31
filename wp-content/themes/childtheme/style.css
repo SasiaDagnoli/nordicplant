@@ -62,17 +62,13 @@ h2 {
 
 /* GLOBALE STYLES SLUT */
 
-/* MOBILE */
-
-/* Header */
-
 /* Størrelsen og placering af logo på mobile */
 .site-logo img {
     width: 50%;
     margin-left: -8px
 }
 
-/* Footer */
+/* FOOTER */
 .footer .column {
     background: #BB4E06;
     padding-bottom: 110px;
@@ -90,15 +86,6 @@ h2 {
     color: white;
 }
 
-/* Farve på burgermenuen*/
-.material-icons {
-    color: #BB4E06;
-}
-
-.toolbar .inner > a.mobile-menu-toggle.menu-text-right {
-    color: #BB4E06;
-}
-
 .widget-title {
     font-size: 20px;
     /* Farve på overskrifter i footeren */
@@ -110,38 +97,49 @@ h2 {
     color: white;
 }
 
-#plantecontainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+/* FOOTER SLUT */
 
-
+/* LOOP VIEW */
+.overskriftplanter {
+    text-align: center;
 }
 
-.billede {
-    cursor: pointer;
-}
-
+/* Styling af filterknapper */
 .filter {
     background-color: white;
     color: #bb4e06;
     border: 2px solid #bb4e06;
     margin: 1vw;
     text-transform: uppercase;
-
 }
 
 .planter {
     padding: 1rem;
 }
 
-
-.overskriftplanter {
-    text-align: center;
+.billede {
+    cursor: pointer;
 }
 
-/* BURGERMENU */
+#plantecontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+/* LOOP VIEW SLUT */
+
+/* BURGERMENUER */
 .filterdisplay {
     display: none;
+}
+
+/* Farve på burgermenuen i header*/
+.material-icons {
+    color: #BB4E06;
+}
+
+.toolbar .inner > a.mobile-menu-toggle.menu-text-right {
+    color: #BB4E06;
 }
 
 #filterknap {
@@ -157,15 +155,34 @@ h2 {
 
 }
 
-@media (max-width: 800px) {
-    .elementor-background-overlay {
-        display: none;
-    }
-}
+/* BURGERMENU SLUT */
 
+/* MEDIA TIL DESKTOP */
 @media (min-width: 1200px) {
+
+    /* Burgermenu til filtrering - loop view */
     #filterknap {
         display: none;
+    }
+
+    /* Størrelsen på logo - desktop */
+    .site-logo img {
+        width: 100%;
+    }
+
+    /* LOOP VIEW */
+    /* Centrering af knapper */
+    .filterdisplay {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0px 200px;
+    }
+
+    /* Grid til loop view */
+    #plantecontainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 3rem;
     }
 
     #plantecontainer {
@@ -174,40 +191,32 @@ h2 {
         padding-top: 4rem;
     }
 
-    /* Centrering af knapper */
-    .filterdisplay {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin: 0px 200px;
-    }
-
-    #plantecontainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 3rem;
-    }
-
-    .single_planter {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 14rem;
-    grid-gap: 5rem;
-}
-
-    .site-logo img {
-        width: 100%;
-    }
-
+    /* Hover effekt på filterknapper */
     .filter:hover {
         color: #a6a6a6;
         border-color: #a6a6a6;
     }
 
+    /* LOOP VIEW SLUT */
+
+    /* SINGLE VIEW */
+    /* Grid */
+    .single_planter {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 14rem;
+        grid-gap: 5rem;
+    }
+
+    /* SINGLE VIEW SLUT */
+
     .color {
         color: #a6a6a6;
     }
 
+    /* FOOTER */
+    /* Grid til footer - desktop */
     .footer .column {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -218,6 +227,8 @@ h2 {
     .footer .column .widget:first-child {
         margin-top: 30px;
     }
+
+    /* FOOTER SLUT */
 
 
 }
