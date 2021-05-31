@@ -12,8 +12,9 @@ get_header();
 
 ?>
 
+<main id="main" class="site-main">
+    <section id="primary" class="content-area"></section>
 
-<template>
     <article class="planter">
         <img class="billede" src="" alt="">
         <div>
@@ -23,21 +24,19 @@ get_header();
 
         </div>
     </article>
-</template>
 
-<main id="main" class="site-main">
-    <section id="primary" class="content-area"></section>
+
+
 
 </main>
 
 <script>
-
     let plante;
 
-    // php kode, som ud fra sluggen henter ID'et som et et tal
-    let aktuelplante = <?php echo get_the_ID() ?>;
 
-     const dbUrl = "http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-json/wp/v2/plante/" + aktuelplante;
+    // php kode, som ud fra sluggen henter ID'et som et et tal
+
+    const dbUrl = "http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-json/wp/v2/plante/" + <?php echo get_the_ID() ?>;
 
     async function getJson() {
         const data = await fetch(dbUrl);
@@ -50,13 +49,13 @@ get_header();
         console.log("visPlanter");
         console.log(plante.title.rendered);
 
-        document.querySelector(".plantenavn").innerHTML = plante.title.rendered;
+        document.querySelector(".plantenavn").textContent = plante.title.rendered;
         document.querySelector(".billede").src = plante.billede.guid;
-        document.querySelector(".pris").innerHTML = plante.content.rendered;
-        document.querySelector(".beskrivelse").innerHTML = plante.content.rendered;
+        document.querySelector(".pris").textContent = plante.pris;
+        document.querySelector(".beskrivelse").textContent = plante.beskrivelse;
     }
 
-
+    getJson();
 
 </script>
 
