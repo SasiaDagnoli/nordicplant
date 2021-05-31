@@ -16,7 +16,7 @@ get_header();
     <section id="primary" class="content-area"></section>
 
     <article class="single_planter">
-        <img class="billede" src="" alt="">
+        <img class="billedesingle" src="" alt="">
         <div>
             <h2 class="plantenavn"></h2>
             <p class="pris"></p>
@@ -52,7 +52,7 @@ get_header();
         console.log(plante.title.rendered);
 
         document.querySelector(".plantenavn").textContent = plante.title.rendered;
-        document.querySelector(".billede").src = plante.billede.guid;
+        document.querySelector(".billedesingle").src = plante.billede.guid;
         document.querySelector(".pris").textContent = plante.pris;
         document.querySelector(".beskrivelse").textContent = plante.beskrivelse;
         document.querySelector(".vand").src = plante.vand.guid;
