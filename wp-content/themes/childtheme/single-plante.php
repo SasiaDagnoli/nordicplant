@@ -23,7 +23,7 @@ get_header();
             <p class="beskrivelse"></p>
             <p class="vandp">Vandmængde<img class="vand" src="" alt=""></p>
             <p class="solp">Sollys<img class="sol" src="" alt=""></p>
-            <button>Tilføj til kurv</button>
+            <button class="addbasket">Tilføj til kurv</button>
         </div>
     </article>
 
