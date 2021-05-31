@@ -22,6 +22,7 @@ get_header();
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 </style>
+
 <h1 class="overskriftplanter">Indendørs planter</h1>
 <template>
     <article class="planter">
@@ -38,6 +39,7 @@ get_header();
     <section id="primary" class="content-area"></section>
 
     <nav id="filtrering">
+        <div id="filterknap"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/filterknap.png" alt="Filterknap"></div>
         <ul id="menu" class="filterdisplay">
             <button class="filter" data-plante="alle">Alle</button>
         </ul>
@@ -47,6 +49,25 @@ get_header();
 </main>
 
 <script>
+    window.addEventListener("load", sidenVises);
+
+    function sidenVises() {
+        console.log("sidenVises");
+        document.querySelector("#filterknap").addEventListener("click", toggleMenu);
+    }
+
+    function toggleMenu() {
+        document.querySelector("#menu").classList.toggle("filterdisplay");
+
+        let erSkjult = document.querySelector("#menu").classList.contains("filterdisplay");
+
+        if (erSkjult == true) {
+            document.querySelector("#filterknap").innerHTML = `<img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/filterknap.png">`;
+        } else {
+            document.querySelector("#filterknap").innerHTML = `<img src=" http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/kryds.png">`;
+        }
+    }
+
     // Variabel - den kan ændre sig
     let planter;
     let kategorier;
@@ -120,11 +141,6 @@ get_header();
     }
 
     getJson();
-
-    //Farve på knap
-
-
-    /*document.querySelector(".filter").addEventListener("click", () => knap.style.color = "#a6a6a6");*/
 
 </script>
 

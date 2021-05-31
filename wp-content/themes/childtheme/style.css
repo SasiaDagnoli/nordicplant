@@ -130,9 +130,35 @@ h2 {
     text-align: center;
 }
 
+/* BURGERMENU */
+.filterdisplay {
+    display: none;
+}
 
+#filterknap {
+    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#menu {
+    list-style-type: none;
+
+}
+
+@media (max-width: 800px) {
+    .elementor-background-overlay {
+        display: none;
+    }
+}
 
 @media (min-width: 1200px) {
+    #filterknap {
+        display: none;
+    }
+
     #plantecontainer {
         padding-left: 12rem;
         padding-right: 12rem;
@@ -164,6 +190,7 @@ h2 {
     .color {
         color: #a6a6a6;
     }
+
 
 
 
