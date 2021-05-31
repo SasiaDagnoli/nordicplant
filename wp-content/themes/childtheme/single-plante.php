@@ -15,7 +15,7 @@ get_header();
 <main id="main" class="site-main">
     <section id="primary" class="content-area"></section>
 
-    <article class="planter">
+    <article class="single_planter">
         <img class="billede" src="" alt="">
         <div>
             <h2 class="plantenavn"></h2>

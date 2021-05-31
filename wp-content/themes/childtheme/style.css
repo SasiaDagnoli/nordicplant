@@ -126,6 +126,7 @@ h2 {
     padding: 1rem;
 }
 
+
 .overskriftplanter {
     text-align: center;
 }
@@ -177,6 +178,14 @@ h2 {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 3rem;
     }
+
+    .single_planter {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 14rem;
+    grid-gap: 5rem;
+}
 
     .site-logo img {
         width: 100%;
