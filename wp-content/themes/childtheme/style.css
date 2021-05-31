@@ -82,6 +82,14 @@ h2 {
     opacity: 0.9;
 }
 
+.hypermarket-social-icons-widget ul li a i {
+    color: white;
+}
+
+.textwidget a {
+    color: white;
+}
+
 /* Farve på burgermenuen*/
 .material-icons {
     color: #BB4E06;
@@ -200,7 +208,16 @@ h2 {
         color: #a6a6a6;
     }
 
+    .footer .column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: left;
+    }
 
+    .footer .column .widget:first-child {
+        margin-top: 30px;
+    }
 
 
 }
