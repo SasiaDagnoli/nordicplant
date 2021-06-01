@@ -113,13 +113,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.single_planter {
-    margin: 1rem;
-}
 
-.planter {
-    padding: 1rem;
-}
 
 .billede {
     cursor: pointer;
@@ -140,6 +134,19 @@ h2 {
     margin: 1vw;
     text-transform: uppercase;
     float: right;
+}
+
+ .pasning {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+.single_planter {
+    margin: 1rem;
+}
+
+.planter {
+    padding: 1rem;
 }
 
 /* BURGERMENUER */
@@ -223,10 +230,7 @@ h2 {
         grid-gap: 5rem;
     }
 
-    .pasning {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+
 
     .vand {
         width: 5%;
