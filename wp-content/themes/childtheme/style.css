@@ -223,6 +223,11 @@ h2 {
         grid-gap: 5rem;
     }
 
+    .pasning {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .vand {
         width: 5%;
     }
