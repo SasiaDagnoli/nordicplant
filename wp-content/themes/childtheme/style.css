@@ -8,6 +8,12 @@ Version: 1.0.3
 
 /* GLOBALE STYLES */
 
+.videre,
+.tilbage {
+    border: none;
+    background: none;
+}
+
 /* Fjern sideoverskrifter */
 .mobile-center {
     display: none;
@@ -21,10 +27,10 @@ h2 {
     color: #463939;
 }
 
-.main-navigation > .menu {
+/*.main-navigation > .menu {
     font-family: 'Open Sans', sans-serif;
 
-}
+}*/
 
 .main-navigation > .menu li > a {
     font-size: 1.6rem;
@@ -136,10 +142,10 @@ h2 {
     float: right;
 }
 
- .pasning {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+.pasning {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 .single_planter {
     margin: 1rem;
@@ -177,6 +183,12 @@ h2 {
 }
 
 /* BURGERMENU SLUT */
+
+@media (max-width: 800px) {
+    .kurv {
+        margin: 0 70px 5px;
+    }
+}
 
 /* MEDIA TIL DESKTOP */
 @media (min-width: 1200px) {
@@ -272,5 +284,24 @@ h2 {
 
     /* FOOTER SLUT */
 
+    .kurv {
+        float: right;
+        width: 70%;
+    }
 
+    .billedesingle,
+    .videre,
+    .tilbage {
+        grid-area: 1/1;
+    }
+
+    .videre {
+        place-self: center end;
+        width: 10%;
+    }
+
+    .tilbage {
+        place-self: center start;
+        width: 10%;
+    }
 }

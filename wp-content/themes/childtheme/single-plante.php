@@ -17,8 +17,8 @@ get_header();
 
     <article class="single_planter">
         <img class="billedesingle" src="" alt="">
-        <button class="videre">Videre</button>
-        <button class="tilbage">Tilbage</button>
+        <button class="videre"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/frem.svg" alt=""></button>
+        <button class="tilbage"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/tilbage.svg" alt=""></button>
         <div>
             <h2 class="plantenavn"></h2>
             <p class="pris"></p>
@@ -32,13 +32,19 @@ get_header();
         </div>
     </article>
 
-
-
-
 </main>
 
 <script>
     let plante;
+    let slideshow = [];
+    const videreKnap = document.querySelector(".videre");
+    const tilbageKnap = document.querySelector(".tilbage");
+    let i = 0;
+    let billeder = document.querySelector(".billedesingle");
+    billeder.src = slideshow[0];
+
+    videreKnap.addEventListener("click", nextPic);
+    tilbageKnap.addEventListener("click", nextPic2);
 
 
     // php kode, som ud fra sluggen henter ID'et som et et tal
@@ -56,26 +62,39 @@ get_header();
         console.log("visPlanter");
         console.log(plante.title.rendered);
 
-        /*const slideshow = ["document.querySelector(".billedesingle ").src = plante.billede.guid", "document.querySelector(".billedesingle ").src = plante.close_up.guid"];
-        const videreKnap = document.querySelector(".videre");
-        let i = 0;
-        let billedeSlide = document.getElementsByClassName("billedesingle");
-        billedeSlide.src = slideshow[0];*/
-
         document.querySelector(".plantenavn").textContent = plante.title.rendered;
-        document.querySelector(".billedesingle").src = plante.billede.guid;
+        /*document.querySelector(".billedesingle").src = plante.billede.guid;*/
         document.querySelector(".pris").textContent = plante.pris;
         document.querySelector(".beskrivelse").textContent = plante.beskrivelse;
         document.querySelector(".vand").src = plante.vand.guid;
         document.querySelector(".sol").src = plante.sol.guid;
 
 
-        document.querySelector(".videre").addEventListener("click", nextPic);
-        document.querySelector(".tilbage").addEventListener("click", nextPic);
+        /*document.querySelector(".videre").addEventListener("click", nextPic);*/
+        slideshow.push(document.querySelector(".billedesingle").src = plante.close_up.guid);
+        slideshow.push(document.querySelector(".billedesingle").src = plante.billede.guid);
+
     }
 
     function nextPic() {
-        document.querySelector(".billedesingle").src = plante.close_up.guid;
+        console.log("Klikket på videre");
+        i++;
+        billeder.src = slideshow[i];
+        /* document.querySelector(".billedesingle").src = plante.close_up.guid;*/
+        /*slideshow.push(document.querySelector(".billedesingle").src = plante.close_up.guid);*/
+        if (i == slideshow.length - 1) {
+            i = -1;
+        }
+    }
+
+    function nextPic2() {
+        if (i == 0) {
+            i = slideshow.length;
+        }
+        i--;
+        billeder.src = slideshow[i];
+
+
 
     }
 
