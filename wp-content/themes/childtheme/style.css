@@ -113,6 +113,10 @@ h2 {
     text-transform: uppercase;
 }
 
+.single_planter {
+    margin: 1rem;
+}
+
 .planter {
     padding: 1rem;
 }

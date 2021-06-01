@@ -22,8 +22,8 @@ get_header();
             <p class="pris"></p>
             <p class="beskrivelse"></p>
             <p class="vandp">Vandmængde<img class="vand" src="" alt=""></p>
-            <p class="solp">Sollys<img class="sol" src="" alt=""></p>
-            <button class="addbasket">Tilføj til kurv</button>
+            <div class="pasning"><p class="solp">Sollys<img class="sol" src="" alt=""></p>
+            <button class="addbasket">Tilføj til kurv</button></div>
         </div>
     </article>
 
