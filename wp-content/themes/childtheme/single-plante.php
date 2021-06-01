@@ -22,8 +22,10 @@ get_header();
             <p class="pris"></p>
             <p class="beskrivelse"></p>
             <p class="vandp">Vandmængde<img class="vand" src="" alt=""></p>
-            <div class="pasning"><p class="solp">Sollys<img class="sol" src="" alt=""></p>
-            <button class="addbasket">Tilføj til kurv</button></div>
+            <div class="pasning">
+                <p class="solp">Sollys<img class="sol" src="" alt=""></p>
+                <button class="addbasket">Tilføj til kurv</button>
+            </div>
         </div>
     </article>
 
@@ -51,8 +53,10 @@ get_header();
         console.log("visPlanter");
         console.log(plante.title.rendered);
 
+        const slideshow = ["document.querySelector(".billedesingle ").src = plante.billede.guid", "document.querySelector(".billedesingle ").src = plante.close_up.guid"];
+
         document.querySelector(".plantenavn").textContent = plante.title.rendered;
-        document.querySelector(".billedesingle").src = plante.billede.guid;
+        /*document.querySelector(".billedesingle").src = plante.billede.guid;*/
         document.querySelector(".pris").textContent = plante.pris;
         document.querySelector(".beskrivelse").textContent = plante.beskrivelse;
         document.querySelector(".vand").src = plante.vand.guid;
