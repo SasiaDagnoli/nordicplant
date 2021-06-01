@@ -135,6 +135,7 @@ h2 {
     border: 2px solid #bb4e06;
     margin: 1vw;
     text-transform: uppercase;
+    float: right;
 }
 
 /* BURGERMENUER */
@@ -219,19 +220,22 @@ h2 {
     }
 
     .vand {
-        width: 8%;
+        width: 5%;
     }
 
     .vandp {
         display: flex;
+        font-weight: 600;
     }
 
     .sol {
-        width: 8%;
+        width: 5%;
+        margin-left: 5px;
     }
 
     .solp {
         display: flex;
+        font-weight: 600;
     }
 
     /* SINGLE VIEW SLUT */
