@@ -17,15 +17,18 @@ get_header();
 
     <article class="single_planter">
         <img class="billedesingle" src="" alt="">
+        <button class="videre">Videre</button>
+        <button class="tilbage">Tilbage</button>
         <div>
             <h2 class="plantenavn"></h2>
             <p class="pris"></p>
             <p class="beskrivelse"></p>
-            <p class="vandp">Vandmængde<img class="vand" src="" alt=""></p>
             <div class="pasning">
+                <p class="vandp">Vandmængde<img class="vand" src="" alt=""></p>
                 <p class="solp">Sollys<img class="sol" src="" alt=""></p>
-                <button class="addbasket">Tilføj til kurv</button>
             </div>
+            <button class="addbasket">Tilføj til kurv</button>
+
         </div>
     </article>
 
@@ -53,14 +56,27 @@ get_header();
         console.log("visPlanter");
         console.log(plante.title.rendered);
 
-        const slideshow = ["document.querySelector(".billedesingle ").src = plante.billede.guid", "document.querySelector(".billedesingle ").src = plante.close_up.guid"];
+        /*const slideshow = ["document.querySelector(".billedesingle ").src = plante.billede.guid", "document.querySelector(".billedesingle ").src = plante.close_up.guid"];
+        const videreKnap = document.querySelector(".videre");
+        let i = 0;
+        let billedeSlide = document.getElementsByClassName("billedesingle");
+        billedeSlide.src = slideshow[0];*/
 
         document.querySelector(".plantenavn").textContent = plante.title.rendered;
-        /*document.querySelector(".billedesingle").src = plante.billede.guid;*/
+        document.querySelector(".billedesingle").src = plante.billede.guid;
         document.querySelector(".pris").textContent = plante.pris;
         document.querySelector(".beskrivelse").textContent = plante.beskrivelse;
         document.querySelector(".vand").src = plante.vand.guid;
         document.querySelector(".sol").src = plante.sol.guid;
+
+
+        document.querySelector(".videre").addEventListener("click", nextPic);
+        document.querySelector(".tilbage").addEventListener("click", nextPic);
+    }
+
+    function nextPic() {
+        document.querySelector(".billedesingle").src = plante.close_up.guid;
+
     }
 
     getJson();
