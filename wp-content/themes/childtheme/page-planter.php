@@ -105,6 +105,7 @@ get_header();
     function addEventListenersToButtons() {
         document.querySelectorAll("#filtrering button").forEach(elm => {
             elm.addEventListener("click", filtrering);
+
         })
     };
 
@@ -112,6 +113,7 @@ get_header();
     function filtrering() {
         filterPlante = this.dataset.plante;
         console.log("filterPlante:", filterPlante);
+        document.querySelector(".filter");
 
         visPlanter();
     }

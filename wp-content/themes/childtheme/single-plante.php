@@ -39,9 +39,9 @@ get_header();
     let slideshow = [];
     const videreKnap = document.querySelector(".videre");
     const tilbageKnap = document.querySelector(".tilbage");
-    let i = 0;
+    let i = 1;
     let billeder = document.querySelector(".billedesingle");
-    billeder.src = slideshow[0];
+    /* billeder.src = slideshow[1];*/
 
     videreKnap.addEventListener("click", nextPic);
     tilbageKnap.addEventListener("click", nextPic2);
@@ -50,6 +50,7 @@ get_header();
     // php kode, som ud fra sluggen henter ID'et som et et tal
 
     const dbUrl = "http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-json/wp/v2/plante/" + <?php echo get_the_ID() ?>;
+
 
     async function getJson() {
         const data = await fetch(dbUrl);
@@ -69,22 +70,32 @@ get_header();
         document.querySelector(".vand").src = plante.vand.guid;
         document.querySelector(".sol").src = plante.sol.guid;
 
-
-        /*document.querySelector(".videre").addEventListener("click", nextPic);*/
+        if (plante.ekstrabillede.guid != undefined) {
+            i = 2;
+        }
         slideshow.push(document.querySelector(".billedesingle").src = plante.close_up.guid);
+
+        console.log(plante.ekstrabillede.guid);
+        if (plante.ekstrabillede.guid != undefined) {
+            slideshow.push(document.querySelector(".billedesingle").src = plante.ekstrabillede.guid);
+        }
         slideshow.push(document.querySelector(".billedesingle").src = plante.billede.guid);
+
+
 
     }
 
     function nextPic() {
         console.log("Klikket på videre");
-        i++;
-        billeder.src = slideshow[i];
-        /* document.querySelector(".billedesingle").src = plante.close_up.guid;*/
-        /*slideshow.push(document.querySelector(".billedesingle").src = plante.close_up.guid);*/
+        console.log(slideshow[0]);
+        console.log(slideshow[1]);
         if (i == slideshow.length - 1) {
             i = -1;
         }
+        i++;
+        billeder.src = slideshow[i];
+
+
     }
 
     function nextPic2() {
