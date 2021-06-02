@@ -2,7 +2,7 @@
 
 Theme Name: Childtheme
 Template: hypermarket
-Version: 1.0.3
+Version: 1.0.4
 
 */
 
@@ -193,9 +193,10 @@ h2 {
     background-color: white;
     color: #bb4e06;
     border: 2px solid #bb4e06;
-    margin: 1vw;
     text-transform: uppercase;
-    float: right;
+    float: left;
+    margin-top: 0.8rem;
+    padding: 0.8rem;
 }
 
 .pasning {
@@ -300,9 +301,15 @@ h2 {
         font-size: 4rem;
     }
 
-    .plantenavn {
+    #single_navn .plantenavn {
         font-size: 7rem;
     }
+
+    .plantenavn {
+        font-size: 4rem;
+    }
+
+
 
     /* LOOP VIEW SLUT */
 

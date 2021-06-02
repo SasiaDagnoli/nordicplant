@@ -20,7 +20,8 @@ get_header();
         <button class="videre"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/frem.svg" alt=""></button>
         <button class="tilbage"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/tilbage.svg" alt=""></button>
         <div>
-            <h2 class="plantenavn"></h2>
+           <div id="single_navn">
+            <h2 class="plantenavn"></h2></div>
             <p class="pris"></p>
             <p class="beskrivelse"></p>
             <div class="pasning">
