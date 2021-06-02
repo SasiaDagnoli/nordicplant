@@ -11,6 +11,7 @@ Version: 1.0.3
 .elementor-kit-18 {
     font-family: 'Open Sans', sans-serif;
 }
+
 .elementor-16 .elementor-element.elementor-element-f71bb0b .elementor-heading-title {
     font-family: alternate-gothic-extra-cond, sans-serif;
     font-weight: 500;
@@ -21,8 +22,25 @@ Version: 1.0.3
 }
 
 
-.elementor-125 .elementor-element.elementor-element-468198e .elementor-heading-title{
+.elementor-125 .elementor-element.elementor-element-468198e .elementor-heading-title {
     font-size: 1.7rem;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+    font-size: 1em;
+    padding: 10px 15px;
+    background-color: white;
+    color: #bb4e06;
+    border: 2px solid #bb4e06;
+    margin: 1vw;
+    text-transform: uppercase;
+    float: right;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+    color: #a6a6a6;
+    border: 2px solid #a6a6a6;
+    background-color: white;
 }
 
 #page-125 h2 {
@@ -269,12 +287,15 @@ h2 {
     h1 {
         font-size: 7rem;
     }
+
     .elementor-125 .elementor-element.elementor-element-65f2fd7 .elementor-heading-title {
-    font-size: 7rem;
-}
+        font-size: 7rem;
+    }
+
     #page-125 h2 {
-    font-size: 4rem;
-}
+        font-size: 4rem;
+    }
+
     .plantenavn {
         font-size: 7rem;
     }
