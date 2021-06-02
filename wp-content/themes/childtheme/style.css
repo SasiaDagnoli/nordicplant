@@ -8,6 +8,10 @@ Version: 1.0.3
 
 /* GLOBALE STYLES */
 
+body {
+    font-family: font-family: 'Open Sans', sans-serif;
+}
+
 .videre,
 .tilbage {
     border: none;
@@ -245,7 +249,7 @@ h2 {
 
 
     .vand {
-        width: 5%;
+        width: 9%;
     }
 
     .vandp {
@@ -254,7 +258,7 @@ h2 {
     }
 
     .sol {
-        width: 5%;
+        width: 9%;
         margin-left: 5px;
     }
 
