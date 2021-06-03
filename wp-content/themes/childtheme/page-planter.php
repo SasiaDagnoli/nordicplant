@@ -164,26 +164,6 @@ get_header();
         this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
     }
 
-
-    //    function addEventListenersToImages() {
-    //        document.querySelectorAll("article").forEach(elm => {
-    //            elm.addEventListener("mouseover", closeupImg);
-    //
-    //        })
-    //    };
-    //
-    //    function closeupImg() {
-    //        planter.forEach(plante => {
-    //            //        this.src = plante.close_up.guid;
-    //            document.querySelector("billede").src = plante.close_up.guid;
-    //        })
-    //    }
-    //
-    //    function normalImg() {
-    //
-    //
-    //    }
-
     getJson();
 
 </script>
