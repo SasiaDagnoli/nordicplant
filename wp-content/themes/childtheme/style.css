@@ -186,6 +186,24 @@ h2 {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
+
+.ikoner {
+    display: flex;
+    flex-direction: row;
+}
+
+.vand {
+    width: 17%;
+    height: 17%;
+}
+
+.sol {
+    width: 17%;
+    height: 17%;
+    margin-left: 5px;
+}
+
+
 /* LOOP VIEW SLUT */
 
 /* SINGLE VIEW */
@@ -241,64 +259,52 @@ h2 {
 
 /* BURGERMENU SLUT */
 
+/*MEDIA TIL MOBIL*/
 @media (max-width: 800px) {
     .kurv {
         margin: 0 70px 5px;
+    }
+
+    .billedezoom {
+        display: none;
+    }
+
+    h1 {
+        padding-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+    .billedezoom {
+        display: none;
+    }
+
+    #plantecontainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin: 3rem;
+    }
+
+    .vand {
+        width: 9%;
+        height: 9%;
+    }
+
+    .sol {
+        width: 9%;
+        height: 9%;
+        margin-left: 5px;
+    }
+
+    #filterknap img {
+        width: 75%;
+        height: auto;
     }
 }
 
 /* MEDIA TIL DESKTOP */
 @media (min-width: 1200px) {
-
-    .img_container {
-        display: grid;
-    }
-
-    .billede {
-        grid-area: 1/1;
-    }
-
-    .billedezoom {
-        grid-area: 1/1;
-        opacity: 0;
-    }
-
-    .billedeskift {
-        animation-name: billedeskift_kf;
-        animation-duration: 0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
-
-    }
-
-    @keyframes billedeskift_kf {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 100%;
-        }
-    }
-
-    .billedeskift_tilbage {
-        animation-name: billedeskift_tilbage_kf;
-        animation-duration: 0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
-
-    }
-
-    @keyframes billedeskift_tilbage_kf {
-        0% {
-            opacity: 100%;
-        }
-
-        100% {
-            opacity: 0%;
-        }
-    }
-
 
     /* Burgermenu til filtrering - loop view */
     #filterknap {
@@ -359,6 +365,57 @@ h2 {
         font-size: 4rem;
     }
 
+    /*Animationer til billedskift ved mouseover på loop START*/
+    .img_container {
+        display: grid;
+    }
+
+    .billede {
+        grid-area: 1/1;
+    }
+
+    .billedezoom {
+        grid-area: 1/1;
+        opacity: 0;
+    }
+
+    .billedeskift {
+        animation-name: billedeskift_kf;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+
+    }
+
+    @keyframes billedeskift_kf {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .billedeskift_tilbage {
+        animation-name: billedeskift_tilbage_kf;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+
+    }
+
+    @keyframes billedeskift_tilbage_kf {
+        0% {
+            opacity: 100%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+
+    /*Animationer til billedskift ved mouseover på loop SLUT*/
 
 
     /* LOOP VIEW SLUT */
@@ -373,10 +430,15 @@ h2 {
         grid-gap: 5rem;
     }
 
-
-
     .vand {
         width: 9%;
+        height: 9%;
+    }
+
+    .sol {
+        width: 9%;
+        height: 9%;
+        margin-left: 5px;
     }
 
     .vandp {
@@ -384,10 +446,7 @@ h2 {
         font-weight: 600;
     }
 
-    .sol {
-        width: 9%;
-        margin-left: 5px;
-    }
+
 
     .solp {
         display: flex;

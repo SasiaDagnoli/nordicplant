@@ -34,6 +34,10 @@ get_header();
             <h2 class="plantenavn"></h2>
             <p class="pris"></p>
         </div>
+        <div class="ikoner">
+            <img class="vand" src="" alt="">
+            <img class="sol" src="" alt="">
+        </div>
     </article>
 </template>
 
@@ -131,11 +135,13 @@ get_header();
 
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").textContent = plante.title.rendered;
+                //Guid = noget fra vores JSON
                 klon.querySelector(".billede").src = plante.billede.guid;
                 klon.querySelector(".billedezoom").src = plante.close_up.guid;
-                //Guid = noget fra vores JSON
 
                 klon.querySelector(".pris").textContent = plante.pris;
+                klon.querySelector(".vand").src = plante.vand.guid;
+                klon.querySelector(".sol").src = plante.sol.guid;
 
                 klon.querySelector(".img_container").addEventListener("mouseenter", closeUpImg);
                 klon.querySelector(".img_container").addEventListener("mouseleave", normalImg);
@@ -163,26 +169,6 @@ get_header();
         this.querySelector(".billedezoom").classList.toggle("billedeskift");
         this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
     }
-
-
-    //    function addEventListenersToImages() {
-    //        document.querySelectorAll("article").forEach(elm => {
-    //            elm.addEventListener("mouseover", closeupImg);
-    //
-    //        })
-    //    };
-    //
-    //    function closeupImg() {
-    //        planter.forEach(plante => {
-    //            //        this.src = plante.close_up.guid;
-    //            document.querySelector("billede").src = plante.close_up.guid;
-    //        })
-    //    }
-    //
-    //    function normalImg() {
-    //
-    //
-    //    }
 
     getJson();
 
