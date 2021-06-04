@@ -2,7 +2,7 @@
 
 Theme Name: Childtheme
 Template: hypermarket
-Version: 1.0.4
+Version: 1.0.5
 
 */
 
@@ -187,7 +187,8 @@ h2 {
 
 
 
-.billede {
+.billede,
+.tilbehorbillede {
     cursor: pointer;
 }
 
@@ -285,6 +286,7 @@ h2 {
 
 }
 
+
 @media screen and (max-width: 900px) and (min-width: 700px) {
     .billedezoom {
         display: none;
@@ -335,13 +337,11 @@ h2 {
     }
 
     /* Grid til loop view */
-    #plantecontainer {
+    #plantecontainer,
+    #tilbehorcontainer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 3rem;
-    }
-
-    #plantecontainer {
         padding-left: 12rem;
         padding-right: 12rem;
         padding-top: 4rem;
