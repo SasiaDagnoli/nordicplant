@@ -518,7 +518,11 @@ h2 {
         width: 10%;
     }
 
-    .elementor-section elementor-top-section .elementor-element elementor-element-839098a .elementor-section-boxed elementor-section-height-default .elementor-section-height-default {
+    .elementor-6 .elementor-element.elementor-element-839098a {
         display: flex;
+        column-gap: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0;
     }
+
 }
