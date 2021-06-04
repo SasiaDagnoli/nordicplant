@@ -309,7 +309,16 @@ h2 {
         scroll-snap-align: center;
     }
 
+    .vand {
+        width: 9%;
+        height: 9%;
+    }
 
+    .sol {
+        width: 9%;
+        height: 9%;
+        margin-left: 5px;
+    }
 }
 
 /*MEDIA TIL IPAD*/
