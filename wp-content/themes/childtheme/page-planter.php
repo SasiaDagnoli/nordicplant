@@ -44,8 +44,6 @@ get_header();
     </article>
 </template>
 
-<img class="hoverikoner" src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/plante_vejledning_hover.png" alt="">
-
 
 <main id="main" class="site-main">
     <section id="primary" class="content-area"></section>
