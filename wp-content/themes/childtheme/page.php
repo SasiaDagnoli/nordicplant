@@ -76,6 +76,8 @@ get_footer();
                 //Guid = noget fra vores JSON
                 klon.querySelector(".imgpopular").src = plante.billede.guid;
                 klon.querySelector(".pris").textContent = plante.pris;
+                klon.querySelector(".vand").src = plante.vand.guid;
+                klon.querySelector(".sol").src = plante.sol.guid;
 
                 klon.querySelector("article").addEventListener("click", () => {
                     location.href = plante.link;
