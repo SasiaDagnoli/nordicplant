@@ -23,8 +23,72 @@ else:
 	get_template_part('loop-templates/content', 'none');
 endif;
 
+
+
 get_footer();
  ?>
+
+<template>
+    <article class="popular">
+        <div class="imgpopularcontainer">
+            <img class="imgpopular" src="" alt="">
+        </div>
+        <div>
+            <h2 class="plantenavn"></h2>
+            <p class="pris"></p>
+        </div>
+    </article>
+</template>
+
+<main id="main" class="site-main">
+    <section id="primary" class="content-area"></section>
+
+    <section class="section.elementor-section.elementor-top-section.elementor-element.elementor-element-839098a.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default"></section>
+
+</main>
+
+<script>
+    let planter;
+    let categories;
+
+    const catUrl = "http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-json/wp/v2/categories?per_page100";
+
+    const dbUrl = "http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-json/wp/v2/plante?per_page100";
+
+    async function getJson() {
+        const data = await fetch(dbUrl);
+        const catdata = await fetch(catUrl);
+
+        planter = await data.json();
+        categories = await catdata.json();
+        console.log("planter", planter);
+        visPopular();
+    }
+
+    function visPopular() {
+        let temp = document.querySelector("template");
+        let container = document.querySelector("section.elementor-section.elementor-top-section.elementor-element.elementor-element-839098a.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default");
+        /*container.innerHTML = "";*/
+        planter.forEach(plante => {
+            if (plante.categories.includes(23)) {
+                let klon = temp.cloneNode(true).content;
+                klon.querySelector("h2").textContent = plante.title.rendered;
+                //Guid = noget fra vores JSON
+                klon.querySelector(".imgpopular").src = plante.billede.guid;
+                klon.querySelector(".pris").textContent = plante.pris;
+
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = plante.link;
+                })
+
+                container.appendChild(klon);
+            }
+
+        })
+    }
+    getJson();
+
+</script>
 
 <style>
     @import url("https://use.typekit.net/vcg6uht.css");
