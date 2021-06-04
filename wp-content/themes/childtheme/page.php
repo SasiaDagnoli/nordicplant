@@ -30,12 +30,17 @@ get_footer();
 
 <template>
     <article class="popular">
-        <div class="imgpopularcontainer">
-            <img class="imgpopular" src="" alt="">
+        <div class="img_container">
+            <img class="billede" src="" alt="">
+            <img class="billedezoom billedeskift_tilbage" src="" alt="">
         </div>
         <div>
             <h2 class="plantenavn"></h2>
             <p class="pris"></p>
+        </div>
+        <div class="ikoner">
+            <img class="vand" src="" alt="">
+            <img class="sol" src="" alt="">
         </div>
     </article>
 </template>
@@ -74,11 +79,14 @@ get_footer();
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").textContent = plante.title.rendered;
                 //Guid = noget fra vores JSON
-                klon.querySelector(".imgpopular").src = plante.billede.guid;
+                klon.querySelector(".billede").src = plante.billede.guid;
+                klon.querySelector(".billedezoom").src = plante.close_up.guid;
                 klon.querySelector(".pris").textContent = plante.pris;
                 klon.querySelector(".vand").src = plante.vand.guid;
                 klon.querySelector(".sol").src = plante.sol.guid;
 
+                klon.querySelector(".img_container").addEventListener("mouseenter", closeUpImg);
+                klon.querySelector(".img_container").addEventListener("mouseleave", normalImg);
                 klon.querySelector("article").addEventListener("click", () => {
                     location.href = plante.link;
                 })
@@ -87,6 +95,19 @@ get_footer();
             }
 
         })
+    }
+
+    function closeUpImg() {
+        console.log("this", this);
+        this.querySelector(".billedezoom").classList.toggle("billedeskift");
+
+        this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
+    }
+
+    function normalImg() {
+        console.log("this", this);
+        this.querySelector(".billedezoom").classList.toggle("billedeskift");
+        this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
     }
     getJson();
 
