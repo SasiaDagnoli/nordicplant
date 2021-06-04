@@ -38,8 +38,13 @@ get_header();
             <img class="vand" src="" alt="">
             <img class="sol" src="" alt="">
         </div>
+        <!--<div class="hoverikoner">
+    <img class="ikonbetydning" src="" alt="">
+</div>-->
     </article>
 </template>
+
+<img class="hoverikoner" src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/plante_vejledning_hover.png" alt="">
 
 
 <main id="main" class="site-main">
@@ -154,6 +159,7 @@ get_header();
             }
 
         })
+
         //        addEventListenersToImages();
     }
 
@@ -169,6 +175,7 @@ get_header();
         this.querySelector(".billedezoom").classList.toggle("billedeskift");
         this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
     }
+
 
     getJson();
 
