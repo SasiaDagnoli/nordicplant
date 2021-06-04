@@ -122,6 +122,16 @@ h2 {
     display: none;
 }
 
+.back {
+    font-size: 1em;
+    padding: 10px 15px;
+    background-color: white;
+    color: #bb4e06;
+    border: 2px solid #bb4e06;
+    margin-left: 12vw;
+    text-transform: uppercase;
+}
+
 /* GLOBALE STYLES SLUT */
 
 /* Størrelsen og placering af logo på mobile */
@@ -426,7 +436,8 @@ h2 {
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 14rem;
+        padding-left: 14rem;
+        padding-right: 14rem;
         grid-gap: 5rem;
     }
 
