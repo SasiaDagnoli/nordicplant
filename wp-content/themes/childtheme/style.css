@@ -317,13 +317,14 @@ h2 {
     h1 {
         font-size: 7rem;
     }
+
     h2 {
         font-size: 4rem;
     }
 
     .elementor-125 .elementor-element.elementor-element-65f2fd7 .elementor-heading-title {
-    font-size: 7rem;
-}
+        font-size: 7rem;
+    }
 }
 
 /* MEDIA TIL DESKTOP */
@@ -515,5 +516,9 @@ h2 {
     .tilbage {
         place-self: center start;
         width: 10%;
+    }
+
+    .elementor-section elementor-top-section .elementor-element elementor-element-839098a .elementor-section-boxed elementor-section-height-default .elementor-section-height-default {
+        display: flex;
     }
 }

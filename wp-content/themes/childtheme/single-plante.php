@@ -65,11 +65,11 @@ get_header();
     }
 
     function tilbageClick() {
-        document.querySelector(".back").addEventListener("click", tilbageLoopView);
+        document.querySelector(".back").addEventListener("click", goBack);
     }
 
-    function tilbageLoopView() {
-        location.href = "http://sasiadagnoli.dk/kea/nordicplant/wordpress/planter/";
+    function goBack() {
+        window.history.back();
     }
 
     function visPlanter() {
