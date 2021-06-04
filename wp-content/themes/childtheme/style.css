@@ -286,7 +286,7 @@ h2 {
 
 }
 
-
+/*MEDIA TIL IPAD*/
 @media screen and (max-width: 900px) and (min-width: 700px) {
     .billedezoom {
         display: none;
@@ -312,6 +312,13 @@ h2 {
     #filterknap img {
         width: 75%;
         height: auto;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 4rem;
     }
 }
 
