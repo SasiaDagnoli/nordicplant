@@ -55,32 +55,36 @@ get_header();
         </ul>
     </nav>
     <div id="forklaring">
-        <div class="forklaringer">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-1-150x150.png" alt="sol">
-            <p>Planten trives bedst i direkte sol</p>
+        <div id="symbolknap">
+            <h3>Symbolvejledning</h3>
         </div>
-        <div class="forklaringer">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-2-150x150.png" alt="sol">
-            <p>Planten trives bedst i lys uden direkte sol.</p>
-        </div>
-        <div class="forklaringer">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-3-150x150.png" alt="sol">
-            <p>Planten trives bedst i halv skygge.</p>
-        </div>
-        <div class="forklaringer">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-1-150x150.png" alt="vand">
-            <p>Planten vandes 1 gang om ugen.</p>
-        </div>
-        <div class="forklaringer">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-2-150x150.png" alt="vand">
-            <p>Planten vandes 1-2 gange om ugen.</p>
-        </div>
-        <div id="vand3" class="forklaringer">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-3-150x150.png" alt="vand">
-            <p>Planten vandes 1-2 gange hver anden uge.</p>
+        <div id="symbolmenu" class="filterdisplay">
+            <div class="forklaringer">
+                <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-1-150x150.png" alt="sol">
+                <p>Planten trives bedst i direkte sol</p>
+            </div>
+            <div class="forklaringer">
+                <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-2-150x150.png" alt="sol">
+                <p>Planten trives bedst i lys uden direkte sol.</p>
+            </div>
+            <div class="forklaringer">
+                <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-3-150x150.png" alt="sol">
+                <p>Planten trives bedst i halv skygge.</p>
+            </div>
+            <div class="forklaringer">
+                <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-1-150x150.png" alt="vand">
+                <p>Planten vandes 1 gang om ugen.</p>
+            </div>
+            <div class="forklaringer">
+                <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-2-150x150.png" alt="vand">
+                <p>Planten vandes 1-2 gange om ugen.</p>
+            </div>
+            <div id="vand3" class="forklaringer">
+                <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-3-150x150.png" alt="vand">
+                <p>Planten vandes 1-2 gange hver anden uge.</p>
+            </div>
         </div>
     </div>
-
     <section id="plantecontainer"></section>
 </main>
 
@@ -90,6 +94,7 @@ get_header();
     function sidenVises() {
         console.log("sidenVises");
         document.querySelector("#filterknap").addEventListener("click", toggleMenu);
+        document.querySelector("#symbolknap").addEventListener("click", toggleSymbol);
     }
 
     function toggleMenu() {
@@ -101,6 +106,18 @@ get_header();
             document.querySelector("#filterknap").innerHTML = `<img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/filterknap.png">`;
         } else {
             document.querySelector("#filterknap").innerHTML = `<img src=" http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/kryds.png">`;
+        }
+    }
+
+    function toggleSymbol() {
+        document.querySelector("#symbolmenu").classList.toggle("filterdisplay");
+
+        let erSkjult = document.querySelector("#symbolmenu").classList.contains("filterdisplay");
+
+        if (erSkjult == true) {
+            document.querySelector("#symbolknap").innerHTML = `<h3>Symbolvejledning</h3>`;
+        } else {
+            document.querySelector("#symbolknap").innerHTML = `<img src=" http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/kryds.png">`;
         }
     }
 
