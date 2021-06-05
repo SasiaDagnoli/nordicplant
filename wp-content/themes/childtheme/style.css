@@ -364,7 +364,7 @@ h2 {
     .elementor-6 .elementor-element.elementor-element-839098a {
         display: flex;
         column-gap: 1rem;
-        margin-top: 5rem;
+        margin-top: -20rem;
         margin-bottom: 0;
     }
 }
@@ -386,7 +386,7 @@ h2 {
     /* Centrering af knapper */
     .filterdisplay {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         margin: 0px 200px;
     }
 
@@ -481,6 +481,45 @@ h2 {
 
     /*Animationer til billedskift ved mouseover på loop SLUT*/
 
+    /*    FORKLARING AF SYMBOLER*/
+    #forklaring {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        background-color: #ffffff;
+        opacity: 100%;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    #forklaring img {
+        width: 42%;
+        /*        height: 17%;*/
+    }
+
+    #forklaring p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .forklaringer {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        /*        column-gap: 0.5rem;*/
+        justify-items: end;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #vand3 {
+        padding-right: 3rem;
+    }
+
+    /*    FORKLARING AF SYMBOLER SLUT*/
 
     /* LOOP VIEW SLUT */
 
@@ -560,6 +599,9 @@ h2 {
         width: 10%;
     }
 
+    .filter {
+        font-size: 1.5rem;
 
+    }
 
 }
