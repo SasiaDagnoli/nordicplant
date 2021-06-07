@@ -27,7 +27,7 @@ get_header();
 <template>
     <article class="planter">
         <div class="img_container">
-            <img class="billedezoom billedeskift_tilbage" src="" alt="">
+            <img class="billedezoom billedeskift_tilbage hide" src="" alt="">
             <img class="billede" src="" alt="">
 
         </div>
@@ -208,15 +208,16 @@ get_header();
 
     function closeUpImg() {
         console.log("this", this);
-        this.querySelector(".billedezoom").classList.toggle("billedeskift");
+        this.querySelector(".billedezoom").classList.remove("hide");
+        this.querySelector(".billedezoom").classList.add("billedeskift");
 
-        this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
+        this.querySelector(".billedezoom").classList.remove("billedeskift_tilbage");
     }
 
     function normalImg() {
         console.log("this", this);
-        this.querySelector(".billedezoom").classList.toggle("billedeskift");
-        this.querySelector(".billedezoom").classList.toggle("billedeskift_tilbage");
+        this.querySelector(".billedezoom").classList.remove("billedeskift");
+        this.querySelector(".billedezoom").classList.add("billedeskift_tilbage");
     }
 
 
