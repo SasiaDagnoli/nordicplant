@@ -307,6 +307,10 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
     color: #a6a6a6;
 }
 
+div.wpforms-container-full .wpforms-form .wpforms-required-label {
+    color: #bb4e06;
+}
+
 /* GLOBALE STYLES SLUT */
 
 /*MEDIA TIL MOBIL*/
@@ -452,7 +456,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
         font-size: 7rem;
     }
 
-    .elementor-widget-container p {
+    .elementor-element-d67d881 > div:nth-child(1) p {
         font-size: 22px;
     }
 
@@ -596,10 +600,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 
     }
 
-    .elementor-widget-container p {
+    .elementor-element-d67d881 > div:nth-child(1) p {
         font-size: 22px;
     }
-
 
     /* FONTSTYLING SLUT*/
     /*NAVBAR*/
