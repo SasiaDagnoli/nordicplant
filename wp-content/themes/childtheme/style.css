@@ -760,4 +760,12 @@ h2 {
         cursor: pointer;
     }
 
+    .toolbar {
+        display: none;
+    }
+
+    .searchicon {
+        float: right;
+    }
+
 }
