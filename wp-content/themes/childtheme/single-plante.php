@@ -19,8 +19,8 @@ get_header();
 
     <article class="single_planter">
         <img class="billedesingle" src="" alt="">
-        <button class="videre"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/frem.svg" alt=""></button>
-        <button class="tilbage"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/tilbage.svg" alt=""></button>
+        <button class="videre"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/pil-h%C3%B8jre.png" alt=""></button>
+        <button class="tilbage"><img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/pil-venstre.png" alt=""></button>
         <div>
             <div id="single_navn">
                 <h2 class="plantenavn"></h2>
