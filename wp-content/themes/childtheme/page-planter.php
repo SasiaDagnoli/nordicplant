@@ -117,7 +117,7 @@ get_header();
         let erSkjult = document.querySelector("#symbolmenu").classList.contains("filterdisplay2");
 
         if (erSkjult == true) {
-            document.querySelector("#symbolknap").innerHTML = `<h3 class="symbolvejledning">Symbolvejledning</h3>`;
+            document.querySelector("#symbolknap").innerHTML = ` <img class="pil_op" src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/pil-op.png" alt="pil"> <h3 class="symbolvejledning">Symbolvejledning</h3>`;
         } else {
             document.querySelector("#symbolknap").innerHTML = `<img id="symbolkryds" src=" http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/kryds.png">`;
         }

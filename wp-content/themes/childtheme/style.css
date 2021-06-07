@@ -396,6 +396,7 @@ h2 {
     .pil_op {
         max-width: 3rem;
         margin-left: 17rem;
+        margin-top: 1rem;
     }
 
     .billedesingle,
@@ -497,6 +498,8 @@ h2 {
     #symbolkryds {
         width: 65%;
         padding: 2rem;
+        position: relative;
+        left: 90vw;
     }
 
     .symbol img {
@@ -521,6 +524,7 @@ h2 {
     .pil_op {
         max-width: 3rem;
         margin-left: 36rem;
+        margin-top: 1rem;
     }
 
 
