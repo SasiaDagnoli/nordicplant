@@ -388,6 +388,26 @@ h2 {
         padding: 1rem;
     }
 
+    .billedesingle,
+    .tilbage,
+    .videre {
+        grid-area: 1/1;
+    }
+
+    .single_planter {
+        display: grid;
+    }
+
+    .videre {
+        place-self: center end;
+        width: 15%;
+    }
+
+    .tilbage {
+        place-self: center start;
+        width: 15%;
+    }
+
 
 }
 
