@@ -56,30 +56,30 @@ get_header();
     </nav>
     <div id="forklaring">
         <div id="symbolknap">
-            <h3>Symbolvejledning</h3>
+            <h3 class="symbolvejledning">Symbolvejledning</h3>
         </div>
         <div id="symbolmenu" class="filterdisplay">
-            <div class="forklaringer">
+            <div id="sol1" class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-1-150x150.png" alt="sol">
                 <p>Planten trives bedst i direkte sol</p>
             </div>
-            <div class="forklaringer">
+            <div class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-2-150x150.png" alt="sol">
                 <p>Planten trives bedst i lys uden direkte sol.</p>
             </div>
-            <div class="forklaringer">
+            <div class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-3-150x150.png" alt="sol">
                 <p>Planten trives bedst i halv skygge.</p>
             </div>
-            <div class="forklaringer">
+            <div class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-1-150x150.png" alt="vand">
                 <p>Planten vandes 1 gang om ugen.</p>
             </div>
-            <div class="forklaringer">
+            <div class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-2-150x150.png" alt="vand">
                 <p>Planten vandes 1-2 gange om ugen.</p>
             </div>
-            <div id="vand3" class="forklaringer">
+            <div id="vand3" class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-vand-3-150x150.png" alt="vand">
                 <p>Planten vandes 1-2 gange hver anden uge.</p>
             </div>
@@ -115,9 +115,9 @@ get_header();
         let erSkjult = document.querySelector("#symbolmenu").classList.contains("filterdisplay");
 
         if (erSkjult == true) {
-            document.querySelector("#symbolknap").innerHTML = `<h3>Symbolvejledning</h3>`;
+            document.querySelector("#symbolknap").innerHTML = `<h3 class="symbolvejledning">Symbolvejledning</h3>`;
         } else {
-            document.querySelector("#symbolknap").innerHTML = `<img src=" http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/kryds.png">`;
+            document.querySelector("#symbolknap").innerHTML = `<img id="symbolkryds" src=" http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/kryds.png">`;
         }
     }
 
