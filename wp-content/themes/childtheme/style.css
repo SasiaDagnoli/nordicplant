@@ -751,4 +751,8 @@ h2 {
 
     }
 
+    .img_container {
+        cursor: pointer;
+    }
+
 }
