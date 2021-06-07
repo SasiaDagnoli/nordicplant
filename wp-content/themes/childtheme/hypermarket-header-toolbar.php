@@ -12,7 +12,7 @@
 
 <div class="toolbar">
     <div class="inner">
-        <a href="http://sasiadagnoli.dk/kea/nordicplant/wordpress/kurv/"><img class="kurv" src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/images/KURV.png" alt=""></a>
+
         <?php
             if(! hypermarket_is_woocommerce_activated()):
                 echo '<a href="#" class="mobile-menu-toggle menu-text-right"><i class="material-icons menu"></i></a>';
