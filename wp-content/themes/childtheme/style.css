@@ -175,7 +175,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 /* FOOTER */
 .footer .column {
     background: #BB4E06;
-    padding-bottom: 110px;
+    /*    padding-bottom: 110px;*/
 }
 
 .hypermarket-social-icons-widget ul li a i {
