@@ -393,6 +393,11 @@ h2 {
         padding: 1rem;
     }
 
+    .pil_op {
+        max-width: 3rem;
+        margin-left: 17rem;
+    }
+
     .billedesingle,
     .tilbage,
     .videre {
@@ -511,6 +516,11 @@ h2 {
 
     #sol1 {
         margin-top: 2rem;
+    }
+
+    .pil_op {
+        max-width: 3rem;
+        margin-left: 36rem;
     }
 
 

@@ -57,7 +57,7 @@ get_header();
     </nav>
     <div id="forklaring">
         <div id="symbolknap">
-            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/pil-op.png" alt="pil">
+            <img class="pil_op" src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/pil-op.png" alt="pil">
             <h3 class="symbolvejledning">Symbolvejledning</h3>
         </div>
         <div id="symbolmenu" class="filterdisplay2">
