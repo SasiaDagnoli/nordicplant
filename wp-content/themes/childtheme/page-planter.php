@@ -60,7 +60,7 @@ get_header();
             <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/pil-op.png" alt="pil">
             <h3 class="symbolvejledning">Symbolvejledning</h3>
         </div>
-        <div id="symbolmenu" class="filterdisplay">
+        <div id="symbolmenu" class="filterdisplay2">
             <div id="sol1" class="forklaringer symbol">
                 <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/icon-sol-1-150x150.png" alt="sol">
                 <p>Planten trives bedst i direkte sol</p>
@@ -112,9 +112,9 @@ get_header();
     }
 
     function toggleSymbol() {
-        document.querySelector("#symbolmenu").classList.toggle("filterdisplay");
+        document.querySelector("#symbolmenu").classList.toggle("filterdisplay2");
 
-        let erSkjult = document.querySelector("#symbolmenu").classList.contains("filterdisplay");
+        let erSkjult = document.querySelector("#symbolmenu").classList.contains("filterdisplay2");
 
         if (erSkjult == true) {
             document.querySelector("#symbolknap").innerHTML = `<h3 class="symbolvejledning">Symbolvejledning</h3>`;

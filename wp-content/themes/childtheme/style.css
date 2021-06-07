@@ -264,6 +264,10 @@ h2 {
     display: none;
 }
 
+.filterdisplay2 {
+    display: none;
+}
+
 /* Farve på burgermenuen i header*/
 .material-icons {
     color: #BB4E06;
@@ -530,7 +534,7 @@ h2 {
     .filterdisplay {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 0px 200px;
+        margin: 0px 90px;
     }
 
     /* Grid til loop view */
@@ -669,6 +673,12 @@ h2 {
 
     #vand3 {
         padding-right: 3rem;
+    }
+
+    .filterdisplay2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0px 20px;
     }
 
     /*    FORKLARING AF SYMBOLER SLUT*/
