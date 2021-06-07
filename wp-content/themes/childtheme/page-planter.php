@@ -27,8 +27,9 @@ get_header();
 <template>
     <article class="planter">
         <div class="img_container">
-            <img class="billede" src="" alt="">
             <img class="billedezoom billedeskift_tilbage" src="" alt="">
+            <img class="billede" src="" alt="">
+
         </div>
         <div>
             <h2 class="plantenavn"></h2>
@@ -56,6 +57,7 @@ get_header();
     </nav>
     <div id="forklaring">
         <div id="symbolknap">
+            <img src="http://sasiadagnoli.dk/kea/nordicplant/wordpress/wp-content/themes/childtheme/img/pil-op.png" alt="pil">
             <h3 class="symbolvejledning">Symbolvejledning</h3>
         </div>
         <div id="symbolmenu" class="filterdisplay">
