@@ -99,16 +99,6 @@ p {
     display: none;
 }
 
-.back {
-    font-size: 1em;
-    padding: 10px 15px;
-    background-color: white;
-    color: #bb4e06;
-    border: 2px solid #bb4e06;
-    margin-left: 12vw;
-    text-transform: uppercase;
-}
-
 .symbolvejledning {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -173,10 +163,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 }
 
 #filterknap {
-    display: inline-block;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 12px;
     width: 10%;
 }
 
@@ -419,6 +408,8 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 
     /*    SINGLE VIEW */
 
+
+
     /*    PLACERING AF PILE PÅ SLIDESHOW*/
 
     .videre {
@@ -432,6 +423,17 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
     }
 
     /*    PLACERING AF PILE PÅ SLIDESHOW*/
+    .back {
+        font-size: 1em;
+        padding: 10px 15px;
+        background-color: white;
+        color: #bb4e06;
+        border: 2px solid #bb4e06;
+        margin-left: 12vw;
+        text-transform: uppercase;
+        position: relative;
+        left: 60.5vw;
+    }
 
 }
 
@@ -452,6 +454,10 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 
     .elementor-125 .elementor-element.elementor-element-65f2fd7 .elementor-heading-title {
         font-size: 7rem;
+    }
+
+    .elementor-widget-container p {
+        font-size: 22px;
     }
 
     /*    FONTSTYLING SLUT*/
@@ -548,6 +554,17 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 
 
     /*LOOP VIEW SLUT*/
+    .back {
+        font-size: 1em;
+        padding: 10px 15px;
+        background-color: white;
+        color: #bb4e06;
+        border: 2px solid #bb4e06;
+        margin-left: 12vw;
+        text-transform: uppercase;
+        position: relative;
+        left: 74.5vw;
+    }
 }
 
 /*MEDIA TIL IPAD SLUT*/
@@ -581,6 +598,11 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
         font-size: 1.5rem;
 
     }
+
+    .elementor-widget-container p {
+        font-size: 22px;
+    }
+
 
     /* FONTSTYLING SLUT*/
     /*NAVBAR*/
@@ -786,7 +808,16 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
     }
 
     /*    Slideshow pile slut*/
+    .back {
+        font-size: 1em;
+        padding: 10px 15px;
+        background-color: white;
+        color: #bb4e06;
+        border: 2px solid #bb4e06;
+        margin-left: 12vw;
+        text-transform: uppercase;
 
+    }
 
     /* SINGLE VIEW SLUT */
 
